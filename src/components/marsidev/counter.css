@@ -1,0 +1,43 @@
+.counters-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1.8rem;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.counter {
+	display: grid;
+	font-size: 1.6em;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	place-items: center;
+	background: #247d8d;
+	border-radius: 16px;
+	margin: 0.5em;
+	padding: 0.5rem;
+	color: #1c1917;
+	width: 100%;
+	max-width: 420px;
+}
+
+.counter-title {
+	color: white;
+	font-size: 2em;
+	text-align: center;
+}
+
+button {
+	border: 1px solid black;
+	padding: 0 0.75rem 0 0.75rem;
+	border-radius: 1rem;
+	background-color: #1e293b;
+	color: #fafaf9;
+}

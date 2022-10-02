@@ -1,0 +1,15 @@
+---
+import Layout from '@layout'
+import '@components/marsidev/counter.css'
+import { SolidCounter } from '@components/marsidev/SolidCounter'
+import { ReactCounter } from '@components/marsidev/ReactCounter'
+import { PreactCounter } from '@components/marsidev/PreactCounter'
+---
+
+<Layout title='Multi Framework counters by @marsidev'>
+	<div class='counters-container'>
+		<ReactCounter client:visible initial={4} title='React Counter' color='#61DAFB' />
+		<SolidCounter client:visible initial={8} title='SolidJS Counter' color='#2C4F7C' />
+		<PreactCounter client:visible initial={16} title='Preact Counter' color='#673AB8' />
+	</div>
+</Layout>
